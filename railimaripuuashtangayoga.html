@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & PRIMARY META (inspired by Chelsey's clean authority) -->
+    <title>Raili Maripuu – Ashtanga Yoga Teacher | Tallinn, Reading, Twyford</title>
+    <meta name="description" content="Personal site of Raili Maripuu. Teaching Ashtanga Yoga in Tallinn (Estonia), Reading & Twyford (UK). A practice space is taking shape—return soon.">
+    <meta name="keywords" content="Ashtanga Yoga, Raili Maripuu, joogatallinn, yoga Reading, yoga Twyford, yoga Tallinn, Mysore">
+    <meta name="author" content="Raili Maripuu">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Raili Maripuu – Ashtanga Yoga">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.railimaripuu.com">
+    <meta property="og:image" content="https://yogareading.co.uk/wp-content/uploads/2022/08/Raili-Maripuu-800px.jpg">
+    <meta property="og:description" content="Teaching in Tallinn, Reading & Twyford. A personal space is taking shape.">
+    <meta property="og:site_name" content="Raili Maripuu Yoga">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.railimaripuu.com">
+
+    <!-- Fonts: Clean & elegant like Chelsey's site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* Inspired by chelseykorus.com: clean, spacious, confident */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --background: #FFFFFF;
+            --text-primary: #1A1A1A;
+            --text-soft: #4A4A4A;
+            --accent-light: #D4C9C0;    /* subtle, like linen */
+            --accent-border: #E9E1D9;
+            --spacing-unit: 2rem;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Header — minimal, like Chelsey's */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0 4rem 0;
+            border-bottom: 1px solid var(--accent-border);
+            margin-bottom: 4rem;
+        }
+
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: var(--text-primary);
+            text-decoration: none;
+            letter-spacing: -0.02em;
+        }
+
+        .nav-placeholder {
+            display: flex;
+            gap: 3rem;
+        }
+
+        .nav-item {
+            color: var(--text-soft);
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            transition: color 0.2s ease;
+        }
+
+        .nav-item:hover {
+            color: var(--text-primary);
+        }
+
+        /* Hero — spacious, with large typography */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 6rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 500px;
+        }
+
+        .pre-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--text-soft);
+            margin-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: clamp(3rem, 5vw, 4.5rem);
+            font-weight: 400;
+            line-height: 1.1;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            color: var(--text-soft);
+            margin-bottom: 3rem;
+            font-weight: 300;
+        }
+
+        /* Main message — inspired by Chelsey's quote blocks */
+        .message-block {
+            margin: 2.5rem 0 3rem 0;
+        }
+
+        .message-block p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            color: var(--text-primary);
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Locations — clean list, no icons */
+        .teaching-locations {
+            margin: 2rem 0 2.5rem 0;
+            font-size: 1.1rem;
+            color: var(--text-soft);
+            line-height: 1.8;
+            border-left: 2px solid var(--accent-light);
+            padding-left: 1.5rem;
+        }
+
+        .teaching-locations div {
+            margin-bottom: 0.3rem;
+        }
+
+        .signature {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            color: var(--text-soft);
+            margin-top: 2rem;
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 1.5rem;
+            font-size: 0.95rem;
+            letter-spacing: 0.1em;
+            color: var(--text-soft);
+            border-bottom: 1px solid var(--accent-light);
+            padding-bottom: 4px;
+        }
+
+        /* Hero image */
+        .hero-image {
+            width: 100%;
+            height: 600px;
+            background-color: var(--accent-border);
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        /* SEO link grid — subtle but effective */
+        .seo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin: 5rem 0;
+            padding: 2rem 0;
+            border-top: 1px solid var(--accent-border);
+            border-bottom: 1px solid var(--accent-border);
+        }
+
+        .seo-item {
+            text-align: left;
+        }
+
+        .seo-item a {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--text-primary);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+
+        .seo-item a:hover {
+            border-bottom-color: var(--text-primary);
+        }
+
+        .seo-item p {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-soft);
+        }
+
+        /* Social links — minimal */
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            color: var(--text-soft);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Quote section — spacious like Chelsey's */
+        .quote-section {
+            margin: 8rem 0;
+            text-align: center;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .quote-section blockquote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 300;
+            line-height: 1.4;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+        }
+
+        .quote-section cite {
+            font-style: normal;
+            color: var(--text-soft);
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 6rem;
+            padding: 3rem 0 2rem;
+            border-top: 1px solid var(--accent-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-soft);
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-soft);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .hero-image {
+                height: 450px;
+                order: -1;
+            }
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            .seo-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem; }
+            h1 { font-size: 2.8rem; }
+            .message-block p { font-size: 1.4rem; }
+            .quote-section blockquote { font-size: 1.6rem; }
+            .footer { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <a href="/" class="logo">Raili Maripuu</a>
+            <div class="nav-placeholder">
+                <span class="nav-item">Practice</span>
+                <span class="nav-item">Reflections</span>
+                <span class="nav-item">Contact</span>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <div class="pre-title">— under construction —</div>
+                <h1>a personal space<br>is taking shape</h1>
+                <p class="lead">Slowly, quietly, with the same patience we bring to the mat.</p>
+
+                <!-- Main message (inspired by Chelsey's voice) -->
+                <div class="message-block">
+                    <p>“A practice deepens in its own time, and so does this digital reflection of it. I am here, teaching, and soon — also here.”</p>
+                    
+                    <!-- Locations: simple list, no icons -->
+                    <div class="teaching-locations">
+                        <div>Tallinn, Estonia</div>
+                        <div>Reading, UK</div>
+                        <div>Twyford, UK</div>
+                    </div>
+
+                    <div class="signature">— Raili Maripuu</div>
+                    <div class="status">✦ tulen varsti ✦</div>
+                </div>
+
+                <!-- Studio link -->
+                <div style="margin: 2rem 0 1.5rem;">
+                    <a href="https://joogatallinn.com" target="_blank" rel="noopener" style="color: var(--text-primary); text-decoration: none; border-bottom: 1px solid var(--accent-light); padding-bottom: 2px;">→ current classes at joogatallinn.com</a>
+                </div>
+
+                <!-- Social -->
+                <div class="social-links">
+                    <a href="https://www.instagram.com/raili.yoga/" target="_blank" rel="noopener">instagram</a>
+                    <a href="mailto:me@railimaripuu.com">email</a>
+                    <a href="https://joogatallinn.com" target="_blank" rel="noopener">shala</a>
+                </div>
+            </div>
+
+            <!-- Image -->
+            <div class="hero-image">
+                <img src="https://yogareading.co.uk/wp-content/uploads/2022/08/Raili-Maripuu-800px.jpg" 
+                     alt="Raili Maripuu – Ashtanga Yoga Teacher"
+                     onerror="this.style.display='none'; this.parentNode.style.background='var(--accent-border)'; this.parentNode.innerHTML+='<div style=\'height:100%;display:flex;align-items:center;justify-content:center;color:var(--text-soft);\'>Raili Maripuu</div>';">
+            </div>
+        </div>
+
+        <!-- SEO Link Grid (clean, authoritative) -->
+        <div class="seo-grid">
+            <div class="seo-item">
+                <a href="https://joogatallinn.com" target="_blank" rel="noopener">joogatallinn.com</a>
+                <p>Mysore shala in Tallinn</p>
+            </div>
+            <div class="seo-item">
+                <a href="https://yogareading.co.uk" target="_blank" rel="noopener">yogareading.co.uk</a>
+                <p>Reading community & workshops</p>
+            </div>
+            <div class="seo-item">
+                <a href="https://www.instagram.com/raili.yoga/" target="_blank" rel="noopener">@raili.yoga</a>
+                <p>Daily moments from practice</p>
+            </div>
+        </div>
+
+        <!-- Quote (spacious, like Chelsey's site) -->
+        <div class="quote-section">
+            <blockquote>“The breezes at dawn have secrets to tell you. Don’t go back to sleep.”</blockquote>
+            <cite>— Rumi</cite>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <small>© Raili Maripuu · Tallinn / Reading / Twyford</small>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/raili.yoga/" target="_blank" rel="noopener">instagram</a>
+                <a href="mailto:me@railimaripuu.com">email</a>
+                <a href="https://joogatallinn.com" target="_blank" rel="noopener">joogatallinn</a>
+                <a href="https://yogareading.co.uk" target="_blank" rel="noopener">yogareading</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Raili Maripuu",
+        "description": "Ashtanga Yoga Teacher",
+        "url": "https://www.railimaripuu.com",
+        "image": "https://yogareading.co.uk/wp-content/uploads/2022/08/Raili-Maripuu-800px.jpg",
+        "sameAs": ["https://www.instagram.com/raili.yoga/", "https://joogatallinn.com", "https://yogareading.co.uk"],
+        "address": [
+            {"@type": "PostalAddress", "addressLocality": "Tallinn", "addressCountry": "EE"},
+            {"@type": "PostalAddress", "addressLocality": "Reading", "addressCountry": "GB"},
+            {"@type": "PostalAddress", "addressLocality": "Twyford", "addressCountry": "GB"}
+        ]
+    }
+    </script>
+</body>
+</html>
